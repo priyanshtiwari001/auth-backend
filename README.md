@@ -23,7 +23,7 @@ POST:
   5. Click on send button you will get the data as shown:
      ![JSON data](https://github.com/user-attachments/assets/316be64a-442e-4423-a671-e0fc9301ff5f)
     
-## Steps of follow to test the api for signin and signup:
+## Steps of follow to test the api for get api
 
 ### GET Request
 1. Once you hit the signin url you will get a data in json format as shown:
