@@ -1,8 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const {rateLimit} = require('express-rate-limit');
 const v1Route = require('./routes')
 const {ConnectDB} = require('./config');
 const {ServerConfig} = require('./config');
+
 
 const msg = "Too many request! Please try afte sometime!";
 const limiter = rateLimit({
@@ -12,9 +14,9 @@ const limiter = rateLimit({
    
 })
 
-
-
 const app = express();
+
+app.use(cors());
 
 
 app.use(express.json());
