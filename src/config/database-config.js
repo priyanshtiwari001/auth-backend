@@ -4,7 +4,7 @@ const {URL} = require('../config/server-config')
 
 async function connectDB(){
     try {
-        const connect = await mongoose.connect(`${URL}/auth_db`);
+        const connect = await mongoose.connect(`${URL}/auth_topic`);
         return connect;
     } catch (error) {
         console.log(error);

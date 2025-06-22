@@ -30,8 +30,7 @@ async function validateUser(req,res,next){
 
 async function checkAuth(req,res,next){
     try {
-       
-        const response = await UserService.isAuthenicated(req.headers['x-access-token']);
+        const response = await UserService.isAuthenicated(req.headers.authorization?.split(" ")[1]);
         
     if(response){
         const userId = response.id.id;
